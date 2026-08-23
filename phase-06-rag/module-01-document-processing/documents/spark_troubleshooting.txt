@@ -1,0 +1,31 @@
+Spark Troubleshooting Guide
+
+1. Executor Memory Failure
+
+Spark executors can fail when the available executor memory
+is insufficient for the workload.
+
+Common symptoms include ExecutorLostFailure,
+OutOfMemoryError, and containers being killed by YARN.
+
+Increasing executor memory can help resolve memory-related
+failures. However, increasing memory alone may not solve
+the problem if the application is processing very large
+partitions.
+
+2. Large Partitions
+
+Large partitions can increase memory pressure because a
+single executor may need to process a large amount of data.
+
+Reducing partition size and increasing the number of
+partitions can distribute the workload more evenly.
+
+3. Debugging Approach
+
+When a Spark job fails, first check the application logs,
+executor logs, memory utilization, and the stage where
+the failure occurred.
+
+The root cause should be identified before changing
+Spark configuration parameters.
