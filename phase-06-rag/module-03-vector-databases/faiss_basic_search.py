@@ -43,6 +43,8 @@ print("Vector dimension:", dimension)
 
 index = faiss.IndexFlatL2(dimension)
 
+print("row index:", index)
+
 print("Vectors before adding:", index.ntotal)
 
 
@@ -63,7 +65,8 @@ query_vector = np.array([
     [1.1, 1.0]
 ], dtype="float32")
 
-
+print("Query vectors after adding:", query_vector)
+print("Query vectors after adding2:", query_vector[0])
 # -----------------------------------
 # 7. Search
 # -----------------------------------
