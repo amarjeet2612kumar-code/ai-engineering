@@ -7,20 +7,17 @@
 import warnings
 warnings.filterwarnings("ignore")
 
-from openai import OpenAI
 from datasets import Dataset
 from langchain_openai import ChatOpenAI
-from langchain_openai import OpenAIEmbeddings
 
 from ragas import evaluate
 from ragas.llms import LangchainLLMWrapper
-from ragas.embeddings import LangchainEmbeddingsWrapper
 from ragas.metrics import (
     faithfulness,
-    answer_relevancy,
     context_precision,
     context_recall,
 )
+from ragas.run_config import RunConfig
 
 # ── Ollama via OpenAI-compatible API ─────────────────────────────────────────
 OLLAMA_BASE_URL  = "http://localhost:11434/v1"
@@ -35,22 +32,16 @@ langchain_llm = ChatOpenAI(
     temperature=0,
 )
 
-langchain_embeddings = OpenAIEmbeddings(
-    base_url=OLLAMA_BASE_URL,
-    api_key="ollama",
-    model=EMBEDDING_MODEL,
-)
-
 # Wrap for ragas
-ragas_llm        = LangchainLLMWrapper(langchain_llm)
-ragas_embeddings = LangchainEmbeddingsWrapper(langchain_embeddings)
+ragas_llm = LangchainLLMWrapper(langchain_llm)
 
 # Inject into singleton metrics (ragas 0.4.x pattern)
 faithfulness.llm        = ragas_llm
-answer_relevancy.llm    = ragas_llm
 context_precision.llm   = ragas_llm
 context_recall.llm      = ragas_llm
-answer_relevancy.embeddings = ragas_embeddings
+
+# Increase timeout — llama3.2:3b is slower than cloud LLMs
+run_config = RunConfig(timeout=240, max_retries=2)
 
 # ── Sample data ───────────────────────────────────────────────────────────────
 dataset = Dataset.from_dict({
@@ -76,7 +67,8 @@ dataset = Dataset.from_dict({
 # ── Evaluate ──────────────────────────────────────────────────────────────────
 result = evaluate(
     dataset,
-    metrics=[faithfulness, answer_relevancy, context_precision, context_recall],
+    metrics=[faithfulness, context_precision, context_recall],
+    run_config=run_config,
 )
 
 print("=" * 60)
