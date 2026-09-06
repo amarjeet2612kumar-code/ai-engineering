@@ -1,0 +1,6 @@
+2026-09-07 10:15:01 INFO Application started
+2026-09-07 10:15:03 INFO Connecting to database
+2026-09-07 10:15:04 INFO Database connection successful
+2026-09-07 10:16:12 ERROR Payment service returned HTTP 500
+2026-09-07 10:16:12 ERROR Transaction 1001 failed
+2026-09-07 10:16:13 INFO Application continues running
