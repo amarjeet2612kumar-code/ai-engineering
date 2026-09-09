@@ -1,0 +1,4 @@
+{"timestamp": "2026-09-10T02:57:38.527657", "role": "operator", "tool": "get_job_status", "job_id": 101, "action": "READ"}
+{"timestamp": "2026-09-10T02:58:18.460566", "role": "operator", "tool": "restart_job", "job_id": 101, "action": "RESTART_EXECUTED"}
+{"timestamp": "2026-09-10T03:02:29.655082", "role": "viewer", "tool": "get_job_status", "job_id": 101, "action": "READ"}
+{"timestamp": "2026-09-10T03:02:34.235041", "role": "viewer", "tool": "restart_job", "job_id": 0, "action": "AUTHORIZATION_DENIED"}
