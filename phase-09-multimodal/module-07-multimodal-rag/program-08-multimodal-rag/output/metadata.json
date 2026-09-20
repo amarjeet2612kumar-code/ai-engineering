@@ -1,0 +1,38 @@
+[
+  {
+    "document_id": "page_01",
+    "modality": "text",
+    "source": "data/text/page_01.txt",
+    "content": "Laptop Product Information\n\nThis page describes a laptop computer designed for data engineering and software development.\nThe laptop includes a high performance processor, 16 GB RAM, and a large SSD for storing\napplications and datasets."
+  },
+  {
+    "document_id": "page_01",
+    "modality": "image",
+    "source": "data/images/page_01.jpg",
+    "content": ""
+  },
+  {
+    "document_id": "page_02",
+    "modality": "text",
+    "source": "data/text/page_02.txt",
+    "content": "Mountain Travel Information\n\nThis page describes mountain travel destinations. The area contains high altitude mountains,\nhiking trails, forests, and scenic viewpoints. It is suitable for trekking and outdoor activities."
+  },
+  {
+    "document_id": "page_02",
+    "modality": "image",
+    "source": "data/images/page_02.jpg",
+    "content": ""
+  },
+  {
+    "document_id": "page_03",
+    "modality": "text",
+    "source": "data/text/page_03.txt",
+    "content": "City Transportation Information\n\nThis page describes transportation in a modern city. Common transportation methods include\ncars, buses, motorcycles, bicycles, and public transport."
+  },
+  {
+    "document_id": "page_03",
+    "modality": "image",
+    "source": "data/images/page_03.jpg",
+    "content": ""
+  }
+]

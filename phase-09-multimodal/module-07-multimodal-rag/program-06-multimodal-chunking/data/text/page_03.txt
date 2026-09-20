@@ -1,0 +1,4 @@
+City Transportation Information
+
+This page describes transportation in a modern city. Common transportation methods include
+cars, buses, motorcycles, bicycles, and public transport.

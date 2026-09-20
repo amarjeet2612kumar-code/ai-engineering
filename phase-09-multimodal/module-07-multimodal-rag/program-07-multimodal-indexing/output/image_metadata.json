@@ -1,0 +1,92 @@
+[
+  {
+    "image_id": "bike_01.jpg",
+    "filename": "bike_01.jpg",
+    "source": "data/images/bike_01.jpg"
+  },
+  {
+    "image_id": "bike_02.jpg",
+    "filename": "bike_02.jpg",
+    "source": "data/images/bike_02.jpg"
+  },
+  {
+    "image_id": "bike_03.jpg",
+    "filename": "bike_03.jpg",
+    "source": "data/images/bike_03.jpg"
+  },
+  {
+    "image_id": "car_01.jpg",
+    "filename": "car_01.jpg",
+    "source": "data/images/car_01.jpg"
+  },
+  {
+    "image_id": "car_02.jpg",
+    "filename": "car_02.jpg",
+    "source": "data/images/car_02.jpg"
+  },
+  {
+    "image_id": "car_03.jpg",
+    "filename": "car_03.jpg",
+    "source": "data/images/car_03.jpg"
+  },
+  {
+    "image_id": "cat_01.jpg",
+    "filename": "cat_01.jpg",
+    "source": "data/images/cat_01.jpg"
+  },
+  {
+    "image_id": "cat_02.jpg",
+    "filename": "cat_02.jpg",
+    "source": "data/images/cat_02.jpg"
+  },
+  {
+    "image_id": "cat_03.jpg",
+    "filename": "cat_03.jpg",
+    "source": "data/images/cat_03.jpg"
+  },
+  {
+    "image_id": "city_01.jpg",
+    "filename": "city_01.jpg",
+    "source": "data/images/city_01.jpg"
+  },
+  {
+    "image_id": "city_02.jpg",
+    "filename": "city_02.jpg",
+    "source": "data/images/city_02.jpg"
+  },
+  {
+    "image_id": "dog_01.jpg",
+    "filename": "dog_01.jpg",
+    "source": "data/images/dog_01.jpg"
+  },
+  {
+    "image_id": "dog_02.jpg",
+    "filename": "dog_02.jpg",
+    "source": "data/images/dog_02.jpg"
+  },
+  {
+    "image_id": "dog_03.jpg",
+    "filename": "dog_03.jpg",
+    "source": "data/images/dog_03.jpg"
+  },
+  {
+    "image_id": "dog_04.jpg",
+    "filename": "dog_04.jpg",
+    "source": "data/images/dog_04.jpg"
+  },
+  {
+    "image_id": "mountain_01.jpg",
+    "filename": "mountain_01.jpg",
+    "source": "data/images/mountain_01.jpg"
+  },
+  {
+    "image_id": "mountain_02.jpg",
+    "filename": "mountain_02.jpg",
+    "source": "data/images/mountain_02.jpg"
+  },
+  {
+    "image_id": "mountain_03.jpg",
+    "filename": "mountain_03.jpg",
+    "source": "data/images/mountain_03.jpg"
+  }
+]

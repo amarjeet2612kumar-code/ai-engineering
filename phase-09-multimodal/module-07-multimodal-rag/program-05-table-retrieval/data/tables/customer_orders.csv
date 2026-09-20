@@ -1,0 +1,5 @@
+OrderID,Customer,Product,Status
+ORD1001,Customer_A,Laptop,Delivered
+ORD1002,Customer_B,Monitor,Shipped
+ORD1003,Customer_C,Keyboard,Delivered
+ORD1004,Customer_D,Mouse,Pending
