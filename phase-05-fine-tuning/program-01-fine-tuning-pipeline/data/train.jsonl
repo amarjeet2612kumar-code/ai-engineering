@@ -1,0 +1,20 @@
+{"text": "Spark executor ran out of memory", "label": 0}
+{"text": "Spark executor was killed because of memory pressure", "label": 0}
+{"text": "Spark job failed with ExecutorLostFailure", "label": 0}
+{"text": "Spark driver failed with out of memory error", "label": 0}
+{"text": "Spark stage failed because executor memory was insufficient", "label": 0}
+{"text": "Kafka consumer is experiencing high lag", "label": 1}
+{"text": "Kafka consumer group has increasing lag", "label": 1}
+{"text": "Kafka topic is not receiving messages", "label": 1}
+{"text": "Kafka broker connection failed", "label": 1}
+{"text": "Kafka consumer stopped processing records", "label": 1}
+{"text": "Hive query failed because partition was missing", "label": 2}
+{"text": "Hive table partition does not exist", "label": 2}
+{"text": "Hive query is unable to find the partition", "label": 2}
+{"text": "Hive table metadata is incorrect", "label": 2}
+{"text": "Hive partition repair is required", "label": 2}
+{"text": "Airflow DAG task failed", "label": 3}
+{"text": "Airflow scheduler did not run the task", "label": 3}
+{"text": "Airflow task is stuck in queued state", "label": 3}
+{"text": "Airflow DAG execution failed", "label": 3}
+{"text": "Airflow task failed because of an exception", "label": 3}
